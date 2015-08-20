@@ -2,6 +2,7 @@ package br.com.milano.modelo;
 
 import java.util.Date;
 
+//Classe modelo do filtro
 public class Filtro {
 	private Date dataInicial;
 	private Date dataFinal;

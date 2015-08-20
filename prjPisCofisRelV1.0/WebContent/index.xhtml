@@ -37,13 +37,11 @@
  				 <p:panelGrid   columns="2" columnClasses="ui-grid-col-2,ui-grid-col-10" layout="grid" styleClass="ui-panelgrid-blank"  >
 					
 					<p:outputLabel for="dataInicial" value="Data Inicial:" />
-				
 					<p:calendar id="dataInicial" value="#{filtroMB.filtro.dataInicial}" pattern="dd/MM/yyyy" locale="pt"  styleClass="datePickerInicial"  >
 						<f:validateLength minimum="6" /> 
 					</p:calendar>
 				
 					<p:outputLabel for="dataFinal" value="Data Final:" />
-				
 					<p:calendar id="dataFinal" value="#{filtroMB.filtro.dataFinal}" pattern="dd/MM/yyyy" locale="pt"  label="Data Final:"  styleClass="datepickerFinal" >
 						<f:validateLength minimum="2" />
                            <p:ajax update="msgLastname" event="keyup" /> 
